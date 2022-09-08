@@ -14,6 +14,9 @@ class MyProgramViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         // - Initiate gradient layer
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = self.view.bounds
