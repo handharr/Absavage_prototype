@@ -9,35 +9,52 @@ import UIKit
 import SnapKit
 
 class MyProgramViewController: UIViewController {
-
+    // MARK: - PROPERTIES
+    // MARK: IBOUTLET
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var programNameTitleLabel: UILabel!
+    @IBOutlet weak var programNameValueLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var durationTitleLabel: UILabel!
+    @IBOutlet weak var circle: UIImageView!
+    @IBOutlet weak var durationValueLabel: UILabel!
+    @IBOutlet weak var roundsTitleLabel: UILabel!
+    @IBOutlet weak var roundsValueLabel: UILabel!
+    @IBOutlet weak var roundsSubtitleLabel: UILabel!
+    @IBOutlet weak var modeTitleLabel: UILabel!
+    @IBOutlet weak var modeValueLabel: UILabel!
+    @IBOutlet weak var toolsRequiredTitleLabel: UILabel!
+    @IBOutlet weak var tools1Label: UILabel!
+    @IBOutlet weak var tools2Label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupUI()
+    }
+
+
+    // MARK: - Setup UI
+    private func setupUI() {
+        // - Hide navbar
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        // - View bg
+        view.backgroundColor = .black
+        // - Label color
+        programNameTitleLabel.textColor = .white
+        programNameValueLabel.textColor = .white
+        nameLabel.textColor = .white
+        durationTitleLabel.textColor = .white
+        durationValueLabel.textColor = .white
+        roundsTitleLabel.textColor = .white
+        roundsValueLabel.textColor = .white
+        roundsSubtitleLabel.textColor = .white
+        modeTitleLabel.textColor = .white
+        modeValueLabel.textColor = .white
+        toolsRequiredTitleLabel.textColor = .white
+        tools1Label.textColor = .white
+        tools2Label.textColor = .white
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        // - Initiate gradient layer
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = self.view.bounds
-        gradientLayer.colors = [
-            UIColor(red: 9/255.0, green: 11/255.0, blue: 15/255.0, alpha: 1.0).cgColor,
-            UIColor(red: 119/255.0, green: 28/255.0, blue: 72/255.0, alpha: 1.0).cgColor
-        ]
-        // - Add sublayer
-        self.view.layer.addSublayer(gradientLayer)
-        print("cek")
-    }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -22,6 +22,10 @@
 		A555ACC728CA112F00ACB2A1 /* MyProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555ACC528CA112F00ACB2A1 /* MyProgramViewController.swift */; };
 		A555ACC828CA112F00ACB2A1 /* MyProgramViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A555ACC628CA112F00ACB2A1 /* MyProgramViewController.xib */; };
 		A555ACCA28CA11F000ACB2A1 /* DashboardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555ACC928CA11F000ACB2A1 /* DashboardTabBarController.swift */; };
+		A555ACCE28CA2D2600ACB2A1 /* PrimaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555ACCD28CA2D2600ACB2A1 /* PrimaryHeaderView.swift */; };
+		A555ACD028CA2D3800ACB2A1 /* PrimaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A555ACCF28CA2D3800ACB2A1 /* PrimaryHeaderView.xib */; };
+		A555ACD328CA2E2100ACB2A1 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555ACD228CA2E2100ACB2A1 /* Extension+UIView.swift */; };
+		A555AE4728CA567300ACB2A1 /* Extension+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555AE4628CA567300ACB2A1 /* Extension+UIFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,15 @@
 		A555ACC528CA112F00ACB2A1 /* MyProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProgramViewController.swift; sourceTree = "<group>"; };
 		A555ACC628CA112F00ACB2A1 /* MyProgramViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProgramViewController.xib; sourceTree = "<group>"; };
 		A555ACC928CA11F000ACB2A1 /* DashboardTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabBarController.swift; sourceTree = "<group>"; };
+		A555ACCD28CA2D2600ACB2A1 /* PrimaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryHeaderView.swift; sourceTree = "<group>"; };
+		A555ACCF28CA2D3800ACB2A1 /* PrimaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrimaryHeaderView.xib; sourceTree = "<group>"; };
+		A555ACD228CA2E2100ACB2A1 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		A555AE4128CA55AD00ACB2A1 /* GraphikMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GraphikMedium.otf; sourceTree = "<group>"; };
+		A555AE4228CA55AD00ACB2A1 /* GraphikRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GraphikRegular.otf; sourceTree = "<group>"; };
+		A555AE4328CA55B600ACB2A1 /* MonumentExtended-Ultrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MonumentExtended-Ultrabold.otf"; sourceTree = "<group>"; };
+		A555AE4428CA55B600ACB2A1 /* MonumentExtended-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MonumentExtended-Regular.otf"; sourceTree = "<group>"; };
+		A555AE4528CA55BD00ACB2A1 /* TuskerGrotesk-3600Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TuskerGrotesk-3600Semibold.ttf"; sourceTree = "<group>"; };
+		A555AE4628CA567300ACB2A1 /* Extension+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIFont.swift"; sourceTree = "<group>"; };
 		EE6159A211303CA82561AD50 /* Pods-Absavage_prototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Absavage_prototype.debug.xcconfig"; path = "Target Support Files/Pods-Absavage_prototype/Pods-Absavage_prototype.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +100,9 @@
 		A555AC9728CA0C7300ACB2A1 /* Absavage_prototype */ = {
 			isa = PBXGroup;
 			children = (
+				A555ACD428CA53B900ACB2A1 /* Resources */,
+				A555ACD128CA2E1500ACB2A1 /* Extensions */,
+				A555ACCB28CA2CA800ACB2A1 /* CustomViews */,
 				A555ACAC28CA0F5600ACB2A1 /* Screens */,
 				A555AC9828CA0C7300ACB2A1 /* AppDelegate.swift */,
 				A555AC9A28CA0C7300ACB2A1 /* SceneDelegate.swift */,
@@ -152,6 +168,52 @@
 				A555ACBA28CA110300ACB2A1 /* RangkingsViewController.xib */,
 			);
 			path = Rangkings;
+			sourceTree = "<group>";
+		};
+		A555ACCB28CA2CA800ACB2A1 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				A555ACCC28CA2D1600ACB2A1 /* PrimaryHeader */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		A555ACCC28CA2D1600ACB2A1 /* PrimaryHeader */ = {
+			isa = PBXGroup;
+			children = (
+				A555ACCD28CA2D2600ACB2A1 /* PrimaryHeaderView.swift */,
+				A555ACCF28CA2D3800ACB2A1 /* PrimaryHeaderView.xib */,
+			);
+			path = PrimaryHeader;
+			sourceTree = "<group>";
+		};
+		A555ACD128CA2E1500ACB2A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A555ACD228CA2E2100ACB2A1 /* Extension+UIView.swift */,
+				A555AE4628CA567300ACB2A1 /* Extension+UIFont.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A555ACD428CA53B900ACB2A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A555ACD528CA53BF00ACB2A1 /* CustomFonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A555ACD528CA53BF00ACB2A1 /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				A555AE4128CA55AD00ACB2A1 /* GraphikMedium.otf */,
+				A555AE4228CA55AD00ACB2A1 /* GraphikRegular.otf */,
+				A555AE4428CA55B600ACB2A1 /* MonumentExtended-Regular.otf */,
+				A555AE4328CA55B600ACB2A1 /* MonumentExtended-Ultrabold.otf */,
+				A555AE4528CA55BD00ACB2A1 /* TuskerGrotesk-3600Semibold.ttf */,
+			);
+			path = CustomFonts;
 			sourceTree = "<group>";
 		};
 		FB2D9EAA600202B9B9F5B0AD /* Pods */ = {
@@ -226,6 +288,7 @@
 				A555ACA528CA0C7400ACB2A1 /* LaunchScreen.storyboard in Resources */,
 				A555ACC828CA112F00ACB2A1 /* MyProgramViewController.xib in Resources */,
 				A555ACA228CA0C7400ACB2A1 /* Assets.xcassets in Resources */,
+				A555ACD028CA2D3800ACB2A1 /* PrimaryHeaderView.xib in Resources */,
 				A555ACC028CA111100ACB2A1 /* LibraryViewController.xib in Resources */,
 				A555ACBC28CA110300ACB2A1 /* RangkingsViewController.xib in Resources */,
 				A555ACC428CA112200ACB2A1 /* ExploreViewController.xib in Resources */,
@@ -283,12 +346,15 @@
 			files = (
 				A555ACBB28CA110300ACB2A1 /* RangkingsViewController.swift in Sources */,
 				A555AC9D28CA0C7300ACB2A1 /* ViewController.swift in Sources */,
+				A555ACD328CA2E2100ACB2A1 /* Extension+UIView.swift in Sources */,
 				A555AC9928CA0C7300ACB2A1 /* AppDelegate.swift in Sources */,
 				A555ACCA28CA11F000ACB2A1 /* DashboardTabBarController.swift in Sources */,
 				A555ACBF28CA111100ACB2A1 /* LibraryViewController.swift in Sources */,
 				A555ACC728CA112F00ACB2A1 /* MyProgramViewController.swift in Sources */,
 				A555ACC328CA112200ACB2A1 /* ExploreViewController.swift in Sources */,
 				A555AC9B28CA0C7300ACB2A1 /* SceneDelegate.swift in Sources */,
+				A555AE4728CA567300ACB2A1 /* Extension+UIFont.swift in Sources */,
+				A555ACCE28CA2D2600ACB2A1 /* PrimaryHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
