@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class MyProgramViewController: UIViewController {
 
@@ -13,6 +14,16 @@ class MyProgramViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // - Initiate gradient layer
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        gradientLayer.colors = [
+            UIColor(red: 9/255.0, green: 11/255.0, blue: 15/255.0, alpha: 1.0).cgColor,
+            UIColor(red: 119/255.0, green: 28/255.0, blue: 72/255.0, alpha: 1.0).cgColor
+        ]
+        // - Add sublayer
+        self.view.layer.addSublayer(gradientLayer)
+        print("cek")
     }
 
 

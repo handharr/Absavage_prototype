@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D6D6A7D77110CC4CF10279D /* Pods_Absavage_prototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836439D1D6DB5B982FEB0E82 /* Pods_Absavage_prototype.framework */; };
 		A555AC9928CA0C7300ACB2A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555AC9828CA0C7300ACB2A1 /* AppDelegate.swift */; };
 		A555AC9B28CA0C7300ACB2A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555AC9A28CA0C7300ACB2A1 /* SceneDelegate.swift */; };
 		A555AC9D28CA0C7300ACB2A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555AC9C28CA0C7300ACB2A1 /* ViewController.swift */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51835BCF6650F67E56D1A04A /* Pods-Absavage_prototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Absavage_prototype.release.xcconfig"; path = "Target Support Files/Pods-Absavage_prototype/Pods-Absavage_prototype.release.xcconfig"; sourceTree = "<group>"; };
+		836439D1D6DB5B982FEB0E82 /* Pods_Absavage_prototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Absavage_prototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A555AC9528CA0C7300ACB2A1 /* Absavage_prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Absavage_prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A555AC9828CA0C7300ACB2A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A555AC9A28CA0C7300ACB2A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		A555ACC528CA112F00ACB2A1 /* MyProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProgramViewController.swift; sourceTree = "<group>"; };
 		A555ACC628CA112F00ACB2A1 /* MyProgramViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProgramViewController.xib; sourceTree = "<group>"; };
 		A555ACC928CA11F000ACB2A1 /* DashboardTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabBarController.swift; sourceTree = "<group>"; };
+		EE6159A211303CA82561AD50 /* Pods-Absavage_prototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Absavage_prototype.debug.xcconfig"; path = "Target Support Files/Pods-Absavage_prototype/Pods-Absavage_prototype.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D6D6A7D77110CC4CF10279D /* Pods_Absavage_prototype.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AEB218F510B5B48AD11049F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				836439D1D6DB5B982FEB0E82 /* Pods_Absavage_prototype.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A555AC8C28CA0C7300ACB2A1 = {
 			isa = PBXGroup;
 			children = (
 				A555AC9728CA0C7300ACB2A1 /* Absavage_prototype */,
 				A555AC9628CA0C7300ACB2A1 /* Products */,
+				FB2D9EAA600202B9B9F5B0AD /* Pods */,
+				2AEB218F510B5B48AD11049F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +154,16 @@
 			path = Rangkings;
 			sourceTree = "<group>";
 		};
+		FB2D9EAA600202B9B9F5B0AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE6159A211303CA82561AD50 /* Pods-Absavage_prototype.debug.xcconfig */,
+				51835BCF6650F67E56D1A04A /* Pods-Absavage_prototype.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A555ACA928CA0C7400ACB2A1 /* Build configuration list for PBXNativeTarget "Absavage_prototype" */;
 			buildPhases = (
+				91C484D69C54BD5DA90A62E8 /* [CP] Check Pods Manifest.lock */,
 				A555AC9128CA0C7300ACB2A1 /* Sources */,
 				A555AC9228CA0C7300ACB2A1 /* Frameworks */,
 				A555AC9328CA0C7300ACB2A1 /* Resources */,
+				5596AA6680BFDAB74AA2B935 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,6 +234,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5596AA6680BFDAB74AA2B935 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Absavage_prototype/Pods-Absavage_prototype-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Absavage_prototype/Pods-Absavage_prototype-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Absavage_prototype/Pods-Absavage_prototype-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91C484D69C54BD5DA90A62E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Absavage_prototype-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A555AC9128CA0C7300ACB2A1 /* Sources */ = {
@@ -354,6 +423,7 @@
 		};
 		A555ACAA28CA0C7400ACB2A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE6159A211303CA82561AD50 /* Pods-Absavage_prototype.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -380,6 +450,7 @@
 		};
 		A555ACAB28CA0C7400ACB2A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51835BCF6650F67E56D1A04A /* Pods-Absavage_prototype.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
