@@ -33,6 +33,8 @@ class DashboardTabBarController: UITabBarController {
         libraryVC.tabBarItem.title = "Library"
         rangkingsVC.tabBarItem.title = "Rangkings"
         tabBar.tintColor = .white
+        tabBar.backgroundColor = .clear
+        tabBar.barTintColor = .clear
         // - Assign VC
         self.setViewControllers([myProgramVC, exploreVC,libraryVC,rangkingsVC], animated: true)
     }

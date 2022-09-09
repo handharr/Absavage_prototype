@@ -26,6 +26,15 @@
 		A555ACD028CA2D3800ACB2A1 /* PrimaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A555ACCF28CA2D3800ACB2A1 /* PrimaryHeaderView.xib */; };
 		A555ACD328CA2E2100ACB2A1 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555ACD228CA2E2100ACB2A1 /* Extension+UIView.swift */; };
 		A555AE4728CA567300ACB2A1 /* Extension+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555AE4628CA567300ACB2A1 /* Extension+UIFont.swift */; };
+		A555AE4A28CA5DD200ACB2A1 /* TuskerGrotesk-3600Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A555AE4928CA5DD200ACB2A1 /* TuskerGrotesk-3600Semibold.ttf */; };
+		A555AE4B28CA5DD600ACB2A1 /* MonumentExtended-Ultrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A555AE4328CA55B600ACB2A1 /* MonumentExtended-Ultrabold.otf */; };
+		A555AE4C28CA5DD800ACB2A1 /* MonumentExtended-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A555AE4428CA55B600ACB2A1 /* MonumentExtended-Regular.otf */; };
+		A555AE4D28CA5DDA00ACB2A1 /* GraphikRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A555AE4228CA55AD00ACB2A1 /* GraphikRegular.otf */; };
+		A555AE4E28CA5DDD00ACB2A1 /* GraphikMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A555AE4128CA55AD00ACB2A1 /* GraphikMedium.otf */; };
+		A555AE5128CAEDD700ACB2A1 /* SecondaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555AE5028CAEDD700ACB2A1 /* SecondaryHeaderView.swift */; };
+		A555AE5328CAEDF500ACB2A1 /* SecondaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A555AE5228CAEDF500ACB2A1 /* SecondaryHeaderView.xib */; };
+		A555AE5728CAFADB00ACB2A1 /* ExploreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555AE5528CAFADB00ACB2A1 /* ExploreCollectionViewCell.swift */; };
+		A555AE5828CAFADB00ACB2A1 /* ExploreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A555AE5628CAFADB00ACB2A1 /* ExploreCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,8 +63,12 @@
 		A555AE4228CA55AD00ACB2A1 /* GraphikRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GraphikRegular.otf; sourceTree = "<group>"; };
 		A555AE4328CA55B600ACB2A1 /* MonumentExtended-Ultrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MonumentExtended-Ultrabold.otf"; sourceTree = "<group>"; };
 		A555AE4428CA55B600ACB2A1 /* MonumentExtended-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MonumentExtended-Regular.otf"; sourceTree = "<group>"; };
-		A555AE4528CA55BD00ACB2A1 /* TuskerGrotesk-3600Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TuskerGrotesk-3600Semibold.ttf"; sourceTree = "<group>"; };
 		A555AE4628CA567300ACB2A1 /* Extension+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIFont.swift"; sourceTree = "<group>"; };
+		A555AE4928CA5DD200ACB2A1 /* TuskerGrotesk-3600Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TuskerGrotesk-3600Semibold.ttf"; sourceTree = "<group>"; };
+		A555AE5028CAEDD700ACB2A1 /* SecondaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryHeaderView.swift; sourceTree = "<group>"; };
+		A555AE5228CAEDF500ACB2A1 /* SecondaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondaryHeaderView.xib; sourceTree = "<group>"; };
+		A555AE5528CAFADB00ACB2A1 /* ExploreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCollectionViewCell.swift; sourceTree = "<group>"; };
+		A555AE5628CAFADB00ACB2A1 /* ExploreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreCollectionViewCell.xib; sourceTree = "<group>"; };
 		EE6159A211303CA82561AD50 /* Pods-Absavage_prototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Absavage_prototype.debug.xcconfig"; path = "Target Support Files/Pods-Absavage_prototype/Pods-Absavage_prototype.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +159,7 @@
 		A555ACB028CA0F9E00ACB2A1 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				A555AE5428CAFABB00ACB2A1 /* CollectionViewCells */,
 				A555ACC128CA112200ACB2A1 /* ExploreViewController.swift */,
 				A555ACC228CA112200ACB2A1 /* ExploreViewController.xib */,
 			);
@@ -173,6 +187,7 @@
 		A555ACCB28CA2CA800ACB2A1 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				A555AE4F28CAEDC800ACB2A1 /* SecondaryHeader */,
 				A555ACCC28CA2D1600ACB2A1 /* PrimaryHeader */,
 			);
 			path = CustomViews;
@@ -211,9 +226,27 @@
 				A555AE4228CA55AD00ACB2A1 /* GraphikRegular.otf */,
 				A555AE4428CA55B600ACB2A1 /* MonumentExtended-Regular.otf */,
 				A555AE4328CA55B600ACB2A1 /* MonumentExtended-Ultrabold.otf */,
-				A555AE4528CA55BD00ACB2A1 /* TuskerGrotesk-3600Semibold.ttf */,
+				A555AE4928CA5DD200ACB2A1 /* TuskerGrotesk-3600Semibold.ttf */,
 			);
 			path = CustomFonts;
+			sourceTree = "<group>";
+		};
+		A555AE4F28CAEDC800ACB2A1 /* SecondaryHeader */ = {
+			isa = PBXGroup;
+			children = (
+				A555AE5028CAEDD700ACB2A1 /* SecondaryHeaderView.swift */,
+				A555AE5228CAEDF500ACB2A1 /* SecondaryHeaderView.xib */,
+			);
+			path = SecondaryHeader;
+			sourceTree = "<group>";
+		};
+		A555AE5428CAFABB00ACB2A1 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A555AE5528CAFADB00ACB2A1 /* ExploreCollectionViewCell.swift */,
+				A555AE5628CAFADB00ACB2A1 /* ExploreCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 		FB2D9EAA600202B9B9F5B0AD /* Pods */ = {
@@ -289,9 +322,16 @@
 				A555ACC828CA112F00ACB2A1 /* MyProgramViewController.xib in Resources */,
 				A555ACA228CA0C7400ACB2A1 /* Assets.xcassets in Resources */,
 				A555ACD028CA2D3800ACB2A1 /* PrimaryHeaderView.xib in Resources */,
+				A555AE5328CAEDF500ACB2A1 /* SecondaryHeaderView.xib in Resources */,
+				A555AE4B28CA5DD600ACB2A1 /* MonumentExtended-Ultrabold.otf in Resources */,
+				A555AE5828CAFADB00ACB2A1 /* ExploreCollectionViewCell.xib in Resources */,
+				A555AE4A28CA5DD200ACB2A1 /* TuskerGrotesk-3600Semibold.ttf in Resources */,
+				A555AE4C28CA5DD800ACB2A1 /* MonumentExtended-Regular.otf in Resources */,
+				A555AE4D28CA5DDA00ACB2A1 /* GraphikRegular.otf in Resources */,
 				A555ACC028CA111100ACB2A1 /* LibraryViewController.xib in Resources */,
 				A555ACBC28CA110300ACB2A1 /* RangkingsViewController.xib in Resources */,
 				A555ACC428CA112200ACB2A1 /* ExploreViewController.xib in Resources */,
+				A555AE4E28CA5DDD00ACB2A1 /* GraphikMedium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,12 +389,14 @@
 				A555ACD328CA2E2100ACB2A1 /* Extension+UIView.swift in Sources */,
 				A555AC9928CA0C7300ACB2A1 /* AppDelegate.swift in Sources */,
 				A555ACCA28CA11F000ACB2A1 /* DashboardTabBarController.swift in Sources */,
+				A555AE5128CAEDD700ACB2A1 /* SecondaryHeaderView.swift in Sources */,
 				A555ACBF28CA111100ACB2A1 /* LibraryViewController.swift in Sources */,
 				A555ACC728CA112F00ACB2A1 /* MyProgramViewController.swift in Sources */,
 				A555ACC328CA112200ACB2A1 /* ExploreViewController.swift in Sources */,
 				A555AC9B28CA0C7300ACB2A1 /* SceneDelegate.swift in Sources */,
 				A555AE4728CA567300ACB2A1 /* Extension+UIFont.swift in Sources */,
 				A555ACCE28CA2D2600ACB2A1 /* PrimaryHeaderView.swift in Sources */,
+				A555AE5728CAFADB00ACB2A1 /* ExploreCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

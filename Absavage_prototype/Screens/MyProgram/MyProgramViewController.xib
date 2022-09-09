@@ -7,6 +7,20 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GraphikRegular.otf">
+            <string>Graphik-Regular</string>
+        </array>
+        <array key="MonumentExtended-Regular.otf">
+            <string>MonumentExtended-Regular</string>
+        </array>
+        <array key="MonumentExtended-Ultrabold.otf">
+            <string>MonumentExtended-Ultrabold</string>
+        </array>
+        <array key="TuskerGrotesk-3600Semibold.ttf">
+            <string>TuskerGrotesk-3600Semibold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyProgramViewController" customModule="Absavage_prototype" customModuleProvider="target">
             <connections>
@@ -22,6 +36,7 @@
                 <outlet property="roundsSubtitleLabel" destination="JZO-8l-TTC" id="72X-Xx-ASo"/>
                 <outlet property="roundsTitleLabel" destination="FtN-OF-rVX" id="5fV-ZK-3I8"/>
                 <outlet property="roundsValueLabel" destination="awH-Gl-hRw" id="r2E-vR-iQc"/>
+                <outlet property="startButton" destination="PCB-j9-odU" id="bAx-dg-DQS"/>
                 <outlet property="tools1Label" destination="03U-gC-DtY" id="dCO-ta-fk2"/>
                 <outlet property="tools2Label" destination="8RV-cr-lLh" id="pNY-zH-QEU"/>
                 <outlet property="toolsRequiredTitleLabel" destination="N0w-l4-j9c" id="ohH-TJ-BU6"/>
@@ -40,129 +55,137 @@
                         <constraint firstAttribute="height" constant="70" id="mHG-9S-hKY"/>
                     </constraints>
                 </view>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aaa-FT-Una" userLabel="imageView">
-                    <rect key="frame" x="64" y="122" width="286.5" height="382"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nj6-gL-CHE">
+                    <rect key="frame" x="16" y="114" width="382" height="435.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="michaella" translatesAutoresizingMaskIntoConstraints="NO" id="aaa-FT-Una" userLabel="imageView">
+                            <rect key="frame" x="31" y="22" width="320" height="391.5"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="aaa-FT-Una" secondAttribute="height" multiplier="3:4" id="aGv-u9-B4s"/>
+                        <constraint firstItem="aaa-FT-Una" firstAttribute="centerX" secondItem="Nj6-gL-CHE" secondAttribute="centerX" id="U1b-lO-CMe"/>
+                        <constraint firstItem="aaa-FT-Una" firstAttribute="height" secondItem="Nj6-gL-CHE" secondAttribute="height" multiplier="0.9" id="cVs-E5-kJg"/>
+                        <constraint firstItem="aaa-FT-Una" firstAttribute="centerY" secondItem="Nj6-gL-CHE" secondAttribute="centerY" id="cgz-Ia-T1B"/>
                     </constraints>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Program name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txu-93-6BJ" userLabel="programNameTitleLabel">
-                    <rect key="frame" x="160" y="512" width="94.5" height="17"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Program name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txu-93-6BJ" userLabel="programNameTitleLabel">
+                    <rect key="frame" x="165.5" y="549.5" width="83" height="12"/>
+                    <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="12"/>
+                    <color key="textColor" red="0.50196078431372548" green="0.50588235294117645" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="EXTREME LEG BURN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AU6-0A-kuu" userLabel="programNameValueLabel">
+                    <rect key="frame" x="109.5" y="569.5" width="195.5" height="42.5"/>
+                    <fontDescription key="fontDescription" name="TuskerGrotesk-3600Semibold" family="Tusker Grotesk" pointSize="40"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXTREME LEG BURN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AU6-0A-kuu" userLabel="programNameValueLabel">
-                    <rect key="frame" x="45" y="537" width="324.5" height="42"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MICHAELLA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fR-nq-tZU" userLabel="nameLabel">
-                    <rect key="frame" x="160.5" y="587" width="93" height="20.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="MICHAELLA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fR-nq-tZU" userLabel="nameLabel">
+                    <rect key="frame" x="153" y="620" width="108.5" height="17"/>
+                    <fontDescription key="fontDescription" name="MonumentExtended-Regular" family="Monument Extended" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upc-9s-ILi" userLabel="divider">
-                    <rect key="frame" x="142.5" y="659.5" width="1" height="67"/>
-                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="frame" x="142.5" y="670.5" width="1" height="51"/>
+                    <color key="backgroundColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="1" id="jMX-9m-Unx"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BRo-DH-2A6" userLabel="divider">
-                    <rect key="frame" x="270.5" y="659.5" width="1" height="67"/>
-                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="frame" x="270.5" y="670.5" width="1" height="51"/>
+                    <color key="backgroundColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="1" id="SuB-Tr-zod"/>
                     </constraints>
                 </view>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HJa-F3-kWe" userLabel="statsContainer">
-                    <rect key="frame" x="16" y="639.5" width="382" height="107"/>
+                <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HJa-F3-kWe" userLabel="statsContainer">
+                    <rect key="frame" x="16" y="653" width="382" height="86"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8HX-BZ-Mpc" userLabel="divider">
                             <rect key="frame" x="0.0" y="0.0" width="382" height="1"/>
-                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="bSO-t2-Beo"/>
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pct-EQ-7I3">
-                            <rect key="frame" x="0.0" y="9" width="382" height="89"/>
+                            <rect key="frame" x="0.0" y="9" width="382" height="68"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p7O-39-gd0">
-                                    <rect key="frame" x="0.0" y="0.0" width="127.5" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="127.5" height="68"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="DURATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pY-3m-76d" userLabel="durationTitleLabel">
-                                            <rect key="frame" x="21.5" y="0.0" width="84" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <rect key="frame" x="33.5" y="0.0" width="60" height="12"/>
+                                            <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="12"/>
+                                            <color key="textColor" red="0.32549019607843138" green="0.33725490196078434" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GD8-Lr-TCI">
-                                            <rect key="frame" x="53.5" y="21" width="20" height="47"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="GD8-Lr-TCI">
+                                            <rect key="frame" x="53.5" y="12" width="20" height="41.5"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="14 MINS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpM-Se-xKi" userLabel="durationValueLabel">
-                                            <rect key="frame" x="32" y="68.5" width="63.5" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="31" y="53.5" width="65" height="14.5"/>
+                                            <fontDescription key="fontDescription" name="MonumentExtended-Regular" family="Monument Extended" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xys-3p-Shi">
-                                    <rect key="frame" x="127.5" y="0.0" width="127" height="89"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xys-3p-Shi">
+                                    <rect key="frame" x="127.5" y="0.0" width="127" height="68"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="ROUNDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtN-OF-rVX" userLabel="roundsTitleLabel">
-                                            <rect key="frame" x="28.5" y="0.0" width="70" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <rect key="frame" x="38.5" y="0.0" width="50" height="12"/>
+                                            <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="12"/>
+                                            <color key="textColor" red="0.32549019607843138" green="0.33725490196078434" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awH-Gl-hRw" userLabel="roundsValueLabel">
-                                            <rect key="frame" x="52" y="20.5" width="23.5" height="48"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                            <rect key="frame" x="54.5" y="20" width="18.5" height="25.5"/>
+                                            <fontDescription key="fontDescription" name="MonumentExtended-Regular" family="Monument Extended" pointSize="21"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="2 ROUNDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZO-8l-TTC" userLabel="roundsSubtitleLabel">
-                                            <rect key="frame" x="21.5" y="68.5" width="84.5" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="22" y="53.5" width="83.5" height="14.5"/>
+                                            <fontDescription key="fontDescription" name="MonumentExtended-Regular" family="Monument Extended" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vcA-bx-bwd">
-                                    <rect key="frame" x="254.5" y="0.0" width="127.5" height="89"/>
+                                    <rect key="frame" x="254.5" y="0.0" width="127.5" height="68"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="MODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hq-hH-hrH" userLabel="modeTitleLabel">
-                                            <rect key="frame" x="39.5" y="0.0" width="49" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <rect key="frame" x="46" y="0.0" width="35.5" height="12"/>
+                                            <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="12"/>
+                                            <color key="textColor" red="0.32549019607843138" green="0.33725490196078434" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5J-Z0-J4U">
-                                            <rect key="frame" x="30" y="20.5" width="68" height="48"/>
+                                            <rect key="frame" x="23" y="12" width="82" height="41.5"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flame.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="va9-R4-6BD">
-                                                    <rect key="frame" x="0.0" y="-0.5" width="17" height="48"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savage" translatesAutoresizingMaskIntoConstraints="NO" id="va9-R4-6BD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="20.5" height="41.5"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flame.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kUf-8D-Ho0">
-                                                    <rect key="frame" x="17" y="-0.5" width="17" height="48"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savage" translatesAutoresizingMaskIntoConstraints="NO" id="kUf-8D-Ho0">
+                                                    <rect key="frame" x="20.5" y="0.0" width="20.5" height="41.5"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flame.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QF2-M0-Rde">
-                                                    <rect key="frame" x="34" y="-0.5" width="17" height="48"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savage" translatesAutoresizingMaskIntoConstraints="NO" id="QF2-M0-Rde">
+                                                    <rect key="frame" x="41" y="0.0" width="20.5" height="41.5"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flame.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="I6J-ig-vVf">
-                                                    <rect key="frame" x="51" y="-0.5" width="17" height="48"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savage-black" translatesAutoresizingMaskIntoConstraints="NO" id="I6J-ig-vVf">
+                                                    <rect key="frame" x="61.5" y="0.0" width="20.5" height="41.5"/>
                                                 </imageView>
                                             </subviews>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="SAVAGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PoZ-au-Pj0" userLabel="modeValueLabel">
-                                            <rect key="frame" x="32.5" y="68.5" width="63" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="34" y="53.5" width="60" height="14.5"/>
+                                            <fontDescription key="fontDescription" name="MonumentExtended-Regular" family="Monument Extended" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -171,8 +194,8 @@
                             </subviews>
                         </stackView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kWK-3Q-edy" userLabel="divider">
-                            <rect key="frame" x="0.0" y="106" width="382" height="1"/>
-                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <rect key="frame" x="0.0" y="85" width="382" height="1"/>
+                            <color key="backgroundColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="eMe-mM-Env"/>
                             </constraints>
@@ -180,37 +203,44 @@
                     </subviews>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="1dr-I0-K1q" userLabel="toolsContainer">
-                    <rect key="frame" x="93" y="841.5" width="228.5" height="20.5"/>
+                    <rect key="frame" x="118" y="834" width="178" height="12"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Requires" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0w-l4-j9c" userLabel="toolsRequiredTitleLabel">
-                            <rect key="frame" x="0.0" y="0.0" width="66.5" height="20.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                            <rect key="frame" x="0.0" y="0.0" width="49" height="12"/>
+                            <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="12"/>
+                            <color key="textColor" red="0.50196078431372548" green="0.50588235294117645" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dumbles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03U-gC-DtY" userLabel="tools1Label">
-                            <rect key="frame" x="70.5" y="0.0" width="67.5" height="20.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <rect key="frame" x="53" y="0.0" width="50" height="12"/>
+                            <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="12"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuL-74-fuc" userLabel="label">
+                            <rect key="frame" x="107" y="0.0" width="4" height="12"/>
+                            <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jump Rope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RV-cr-lLh" userLabel="tools2Label">
-                            <rect key="frame" x="142" y="0.0" width="86.5" height="20.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <rect key="frame" x="115" y="0.0" width="63" height="12"/>
+                            <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="12"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCB-j9-odU">
-                    <rect key="frame" x="16" y="778.5" width="382" height="55"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCB-j9-odU" userLabel="startButton">
+                    <rect key="frame" x="16" y="771" width="382" height="55"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.1764705882" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="55" id="xEX-6s-BLH"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="START NOW">
-                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
-                    </buttonConfiguration>
+                    <fontDescription key="fontDescription" name="MonumentExtended-Ultrabold" family="Monument Extended" pointSize="14"/>
+                    <color key="tintColor" red="0.96078431372549022" green="0.1764705882352941" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="START NOW"/>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -220,17 +250,19 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HJa-F3-kWe" secondAttribute="trailing" constant="16" id="7VI-UR-r7D"/>
                 <constraint firstItem="xys-3p-Shi" firstAttribute="leading" secondItem="upc-9s-ILi" secondAttribute="trailing" id="7qE-2A-1cs"/>
                 <constraint firstItem="KVh-dg-Jdz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="8ep-No-uie"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Nj6-gL-CHE" secondAttribute="trailing" constant="16" id="AKJ-1U-Fqz"/>
                 <constraint firstItem="Txu-93-6BJ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Fu1-ng-tQ6"/>
-                <constraint firstItem="aaa-FT-Una" firstAttribute="top" secondItem="KVh-dg-Jdz" secondAttribute="bottom" constant="8" symbolic="YES" id="H4l-UQ-KUJ"/>
                 <constraint firstItem="AU6-0A-kuu" firstAttribute="top" secondItem="Txu-93-6BJ" secondAttribute="bottom" constant="8" symbolic="YES" id="LZJ-zS-8xZ"/>
                 <constraint firstItem="BRo-DH-2A6" firstAttribute="height" secondItem="xys-3p-Shi" secondAttribute="height" multiplier="0.75" id="MdR-9c-UUO"/>
-                <constraint firstItem="1dr-I0-K1q" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Mkr-AD-6aW"/>
-                <constraint firstItem="HJa-F3-kWe" firstAttribute="top" secondItem="1fR-nq-tZU" secondAttribute="bottom" constant="32" id="Ntz-C1-RTb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1dr-I0-K1q" secondAttribute="bottom" constant="16" id="Mkr-AD-6aW"/>
+                <constraint firstItem="HJa-F3-kWe" firstAttribute="top" secondItem="1fR-nq-tZU" secondAttribute="bottom" constant="16" id="Ntz-C1-RTb"/>
                 <constraint firstItem="PCB-j9-odU" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="OzE-OT-vDb"/>
                 <constraint firstItem="xys-3p-Shi" firstAttribute="trailing" secondItem="BRo-DH-2A6" secondAttribute="leading" id="QIr-hy-TOZ"/>
+                <constraint firstItem="Nj6-gL-CHE" firstAttribute="top" secondItem="KVh-dg-Jdz" secondAttribute="bottom" id="RA7-tu-TuR"/>
                 <constraint firstItem="1dr-I0-K1q" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Rhf-Vo-uSl"/>
                 <constraint firstItem="KVh-dg-Jdz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="VZr-hE-LGf"/>
                 <constraint firstItem="1fR-nq-tZU" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="X11-DU-Uan"/>
+                <constraint firstItem="Nj6-gL-CHE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ZPm-QG-R2r"/>
                 <constraint firstItem="AU6-0A-kuu" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="aM6-5v-1EK"/>
                 <constraint firstItem="1dr-I0-K1q" firstAttribute="top" secondItem="PCB-j9-odU" secondAttribute="bottom" constant="8" symbolic="YES" id="c5R-ea-dwD"/>
                 <constraint firstItem="BRo-DH-2A6" firstAttribute="centerY" secondItem="xys-3p-Shi" secondAttribute="centerY" id="cG7-77-42z"/>
@@ -238,18 +270,19 @@
                 <constraint firstItem="HJa-F3-kWe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="jJg-Ui-1pW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KVh-dg-Jdz" secondAttribute="trailing" constant="16" id="kau-NM-btn"/>
                 <constraint firstItem="upc-9s-ILi" firstAttribute="height" secondItem="xys-3p-Shi" secondAttribute="height" multiplier="0.75" id="mfX-0Q-e32"/>
-                <constraint firstItem="aaa-FT-Una" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="rFW-Se-vDL"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PCB-j9-odU" secondAttribute="trailing" constant="16" id="u3G-ZE-Zle"/>
+                <constraint firstItem="Txu-93-6BJ" firstAttribute="top" secondItem="Nj6-gL-CHE" secondAttribute="bottom" id="w89-tl-Ewi"/>
                 <constraint firstItem="PCB-j9-odU" firstAttribute="top" secondItem="HJa-F3-kWe" secondAttribute="bottom" constant="32" id="wM4-mR-H7B"/>
-                <constraint firstItem="Txu-93-6BJ" firstAttribute="top" secondItem="aaa-FT-Una" secondAttribute="bottom" constant="8" symbolic="YES" id="wlz-tI-zEi"/>
                 <constraint firstItem="upc-9s-ILi" firstAttribute="centerY" secondItem="xys-3p-Shi" secondAttribute="centerY" id="yx2-of-N96"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="124"/>
+            <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
         </view>
     </objects>
     <resources>
-        <image name="circle" catalog="system" width="128" height="121"/>
-        <image name="flame.fill" catalog="system" width="108" height="128"/>
+        <image name="circle" width="20" height="20"/>
+        <image name="michaella" width="320" height="374"/>
+        <image name="savage" width="20.5" height="20"/>
+        <image name="savage-black" width="20.5" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

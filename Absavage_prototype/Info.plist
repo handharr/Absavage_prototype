@@ -5,7 +5,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>MonumentExtended-Regular.otf</string>
-		<string></string>
+		<string>Roboto-Regular.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

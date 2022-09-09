@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MonumentExtended-Regular.otf">
+            <string>MonumentExtended-Regular</string>
+        </array>
+        <array key="MonumentExtended-Ultrabold.otf">
+            <string>MonumentExtended-Ultrabold</string>
+        </array>
+        <array key="TuskerGrotesk-3600Semibold.ttf">
+            <string>TuskerGrotesk-3600Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ExploreCollectionViewCell" customModule="Absavage_prototype" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="360"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="360"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0dC-m3-LpZ" userLabel="imageView">
+                        <rect key="frame" x="16" y="0.0" width="218" height="360"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="gbH-Sd-SNl">
+                        <rect key="frame" x="56" y="210" width="138" height="134"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXERCISE NAME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paj-iw-XeL" userLabel="titleLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="138" height="34"/>
+                                <fontDescription key="fontDescription" name="TuskerGrotesk-3600Semibold" family="Tusker Grotesk" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COACHES NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yap-aq-Ooq" userLabel="subtitleLabel">
+                                <rect key="frame" x="0.0" y="58" width="138" height="12"/>
+                                <fontDescription key="fontDescription" name="MonumentExtended-Regular" family="Monument Extended" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvS-sb-bYJ" userLabel="startButton">
+                                <rect key="frame" x="0.0" y="94" width="138" height="40"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.1764705882" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="8et-ci-nwC"/>
+                                    <constraint firstAttribute="height" constant="40" id="ii3-Gi-qAq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MonumentExtended-Ultrabold" family="Monument Extended" pointSize="14"/>
+                                <color key="tintColor" red="0.96078431369999995" green="0.1764705882" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START NOW"/>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0dC-m3-LpZ" secondAttribute="bottom" id="9kS-9d-T4H"/>
+                <constraint firstItem="0dC-m3-LpZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OD6-bS-DT7"/>
+                <constraint firstAttribute="trailing" secondItem="0dC-m3-LpZ" secondAttribute="trailing" constant="16" id="WrT-6k-JKu"/>
+                <constraint firstItem="0dC-m3-LpZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="dKg-od-Eyu"/>
+                <constraint firstAttribute="bottom" secondItem="gbH-Sd-SNl" secondAttribute="bottom" constant="16" id="gJR-8h-6On"/>
+                <constraint firstItem="gbH-Sd-SNl" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="iz5-lI-92X"/>
+            </constraints>
+            <size key="customSize" width="306" height="416"/>
+            <connections>
+                <outlet property="imageView" destination="0dC-m3-LpZ" id="gMn-bY-cbQ"/>
+                <outlet property="startButton" destination="cvS-sb-bYJ" id="GPq-Dv-ySS"/>
+                <outlet property="subtitleLabel" destination="Yap-aq-Ooq" id="CnK-0l-Fpf"/>
+                <outlet property="titleLabel" destination="paj-iw-XeL" id="XzI-XW-JeE"/>
+            </connections>
+            <point key="canvasLocation" x="323.1884057971015" y="248.4375"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,20 +1,17 @@
 //
-//  PrimaryHeaderView.swift
+//  SecondaryHeader.swift
 //  Absavage_prototype
 //
-//  Created by MEKARI on 08/09/22.
+//  Created by MEKARI on 09/09/22.
 //
 
 import UIKit
 
-final class PrimaryHeaderView: UIView {
+final class SecondaryHeaderView: UIView {
     // MARK: - PROPERTIES
-    @IBOutlet weak var dayLabel: UILabel!
-    @IBOutlet weak var dayNameLabel: UILabel!
-    @IBOutlet weak var monthYearLabel: UILabel!
-    @IBOutlet weak var rangkingLabel: UILabel!
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var avatarImageView: UIImageView!
+    // MARK: IBOUTLET
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
     
     // MARK: - LIFECYCLE METHODS
     public override init(frame: CGRect) {
@@ -55,17 +52,6 @@ final class PrimaryHeaderView: UIView {
     }
     
     private func setupUI() {
-        self.backgroundColor = .black
-        // - Fit label
-        dayLabel.sizeToFit()
-        timeLabel.sizeToFit()
-        dayNameLabel.sizeToFit()
-        monthYearLabel.sizeToFit()
-        // - Setup label color
-        dayLabel.textColor = .white
-        rangkingLabel.textColor = .white
-        timeLabel.textColor = .white
-        // - Rounded avatar
-        avatarImageView.layer.cornerRadius = 15
+        self.backgroundColor = .clear
     }
 }

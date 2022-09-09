@@ -26,6 +26,7 @@ class MyProgramViewController: UIViewController {
     @IBOutlet weak var toolsRequiredTitleLabel: UILabel!
     @IBOutlet weak var tools1Label: UILabel!
     @IBOutlet weak var tools2Label: UILabel!
+    @IBOutlet weak var startButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,19 +43,19 @@ class MyProgramViewController: UIViewController {
         // - View bg
         view.backgroundColor = .black
         // - Label color
-        programNameTitleLabel.textColor = .white
         programNameValueLabel.textColor = .white
         nameLabel.textColor = .white
-        durationTitleLabel.textColor = .white
         durationValueLabel.textColor = .white
-        roundsTitleLabel.textColor = .white
         roundsValueLabel.textColor = .white
         roundsSubtitleLabel.textColor = .white
-        modeTitleLabel.textColor = .white
         modeValueLabel.textColor = .white
-        toolsRequiredTitleLabel.textColor = .white
         tools1Label.textColor = .white
         tools2Label.textColor = .white
+        // - Rounded image view
+        imageView.layer.cornerRadius = 10
+        // - Button
+        startButton.layer.cornerRadius = 10
+        startButton.titleLabel?.font = .monumentExtendedUltrabold(size: 14) ?? .boldSystemFont(ofSize: 14)
     }
     
 }
