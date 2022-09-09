@@ -15,6 +15,8 @@ class ExploreCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
     
+    let gradientLayer = CAGradientLayer()
+    
     // MARK: - UI LIFECYCLE
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,8 +26,13 @@ class ExploreCollectionViewCell: UICollectionViewCell {
         contentView.clipsToBounds = true
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        setupGradient()
+    }
+    
     override func prepareForReuse() {
-        startButton.isHidden = true
+        
     }
 
     // MARK: - PUBLIC METHODS
@@ -33,6 +40,25 @@ class ExploreCollectionViewCell: UICollectionViewCell {
         titleLabel.text = title
         subtitleLabel.text = subtitle
         imageView.image = UIImage(named: subtitle.lowercased())
-        startButton.isHidden = false
+    }
+    
+    func setupGradient() {
+        gradientLayer.frame = self.imageView.bounds
+        gradientLayer.colors = [
+            UIColor.clear.cgColor,
+            UIColor.clear.cgColor,
+            UIColor.black.withAlphaComponent(0.5).cgColor,
+            UIColor(red: 119/255, green: 28/255, blue: 72/255, alpha: 0.7).cgColor,
+            UIColor(red: 119/255, green: 28/255, blue: 72/255, alpha: 0.9).cgColor
+        ]
+        imageView.layer.addSublayer(gradientLayer)
+    }
+    
+    func showGradient() {
+        gradientLayer.isHidden = false
+    }
+    
+    func removeGradient() {
+        gradientLayer.isHidden = true
     }
 }

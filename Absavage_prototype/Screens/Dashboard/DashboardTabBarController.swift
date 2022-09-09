@@ -35,6 +35,7 @@ class DashboardTabBarController: UITabBarController {
         tabBar.tintColor = .white
         tabBar.backgroundColor = .clear
         tabBar.barTintColor = .clear
+        tabBar.backgroundImage = UIImage()
         // - Assign VC
         self.setViewControllers([myProgramVC, exploreVC,libraryVC,rangkingsVC], animated: true)
     }

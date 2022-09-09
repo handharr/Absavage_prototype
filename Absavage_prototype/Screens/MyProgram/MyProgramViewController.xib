@@ -202,6 +202,17 @@
                         </view>
                     </subviews>
                 </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCB-j9-odU" userLabel="startButton">
+                    <rect key="frame" x="16" y="771" width="382" height="55"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.1764705882" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="xEX-6s-BLH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MonumentExtended-Ultrabold" family="Monument Extended" pointSize="14"/>
+                    <color key="tintColor" red="0.96078431372549022" green="0.1764705882352941" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="START NOW"/>
+                </button>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="1dr-I0-K1q" userLabel="toolsContainer">
                     <rect key="frame" x="118" y="834" width="178" height="12"/>
                     <subviews>
@@ -231,17 +242,6 @@
                         </label>
                     </subviews>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCB-j9-odU" userLabel="startButton">
-                    <rect key="frame" x="16" y="771" width="382" height="55"/>
-                    <color key="backgroundColor" red="0.96078431369999995" green="0.1764705882" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="55" id="xEX-6s-BLH"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="MonumentExtended-Ultrabold" family="Monument Extended" pointSize="14"/>
-                    <color key="tintColor" red="0.96078431372549022" green="0.1764705882352941" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="START NOW"/>
-                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

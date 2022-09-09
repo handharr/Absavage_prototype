@@ -19,6 +19,8 @@ class ExploreViewController: UIViewController {
     @IBOutlet weak var firstCollectionView: UICollectionView!
     @IBOutlet weak var secondSecondaryHeaderView: SecondaryHeaderView!
     @IBOutlet weak var secondCollectionView: UICollectionView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var mainStackView: UIStackView!
     // MARK: DATA
     private let datas: [ExploreModel] = [
         ExploreModel(programName: "HIT\nHEART", userName: "EVELYN"),
@@ -40,6 +42,9 @@ class ExploreViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         // - Set background to black
         view.backgroundColor = .black
+        // - Set Second header
+        secondSecondaryHeaderView.titleLabel.text = "UPPER BODY"
+        secondSecondaryHeaderView.subtitleLabel.text = "CRUSH YOUR CORE"
     }
     
     private func setupCollectionView() {
@@ -64,7 +69,10 @@ extension ExploreViewController: UICollectionViewDelegate, UICollectionViewDataS
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExploreCollectionViewCell", for: indexPath) as? ExploreCollectionViewCell else {
             return UICollectionViewCell()
         }
-        let model = datas[indexPath.item]
+        var model = datas[indexPath.item]
+        if collectionView == secondCollectionView {
+            model = datas.reversed()[indexPath.item]
+        }
         cell.setupCell(title: model.programName, subtitle: model.userName)
         return cell
     }
@@ -74,7 +82,16 @@ extension ExploreViewController: UICollectionViewDelegate, UICollectionViewDataS
         return CGSize(width: screendWidth * 0.9, height: 360)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        4.0
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        guard let cells = firstCollectionView.visibleCells as? [ExploreCollectionViewCell] else { return }
+        var strings: [String] = []
+        for cell in cells {
+            strings.append(cell.subtitleLabel.text?.lowercased() ?? "")
+        }
+        print("debug \(strings)")
+        strings.removeAll()
+        for cell in cells {
+            print("debug \(cell.subtitleLabel.text ?? "") - \(cell.frame.origin.x) - \(firstCollectionView.contentOffset.x)")
+        }
     }
 }

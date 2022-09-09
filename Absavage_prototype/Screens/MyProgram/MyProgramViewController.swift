@@ -28,13 +28,14 @@ class MyProgramViewController: UIViewController {
     @IBOutlet weak var tools2Label: UILabel!
     @IBOutlet weak var startButton: UIButton!
     
+    // MARK: - LIFECYCLE METHODS
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setupUI()
+        setupGradient()
     }
-
 
     // MARK: - Setup UI
     private func setupUI() {
@@ -56,6 +57,24 @@ class MyProgramViewController: UIViewController {
         // - Button
         startButton.layer.cornerRadius = 10
         startButton.titleLabel?.font = .monumentExtendedUltrabold(size: 14) ?? .boldSystemFont(ofSize: 14)
+        startButton.layer.shadowColor = UIColor(red: 119/255.0, green: 28/255.0, blue: 72/255.0, alpha: 1.0).cgColor
+        startButton.layer.shadowOffset = CGSize(width: 0, height: 40)
+        startButton.layer.shadowRadius = 15
+        startButton.layer.shadowOpacity = 0.7
+        startButton.layer.shadowPath = nil
     }
     
+    func setupGradient() {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.imageView.bounds
+        gradientLayer.colors = [
+            UIColor.clear.cgColor,
+            UIColor.clear.cgColor,
+            UIColor.black.withAlphaComponent(0.5).cgColor,
+            UIColor.black.withAlphaComponent(0.95).cgColor,
+            UIColor.black.cgColor
+        ]
+        imageView.layer.addSublayer(gradientLayer)
+        imageView.layoutSubviews()
+    }
 }

@@ -18,7 +18,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondaryHeaderView" customModule="Absavage_prototype" customModuleProvider="target">
             <connections>
                 <outlet property="subtitleLabel" destination="7K4-Oa-xey" id="IHV-tU-hgE"/>
-                <outlet property="titleLabel" destination="7K4-Oa-xey" id="4wr-H8-hLZ"/>
+                <outlet property="titleLabel" destination="91I-UD-lJP" id="aA1-gM-11s"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
