@@ -67,5 +67,30 @@ final class PrimaryHeaderView: UIView {
         timeLabel.textColor = .white
         // - Rounded avatar
         avatarImageView.layer.cornerRadius = 15
+        // - Add action
+        addGesture(someView: avatarImageView, methods: #selector(handleClickAvatar(_:)))
+    }
+    
+    // MARK: - IBACTION METHODS
+    /// Open MyProfile
+    @objc private func handleClickAvatar(_ gesture: UITapGestureRecognizer) {
+        // - Initiate and push MyProfile
+        guard let superView = self.superview,
+              let parentVC = superView.findViewController()
+        else { return }
+        let vc = MyProfileViewController()
+        parentVC.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    // MARK: - HELPER METHODS
+    /// Function to add Gesture to a view
+    private func addGesture(someView: UIView, methods: Selector?) {
+        // - Create and setup UITapGestureRecognizer instance
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: methods)
+        gestureRecognizer.numberOfTapsRequired = 1
+        gestureRecognizer.numberOfTouchesRequired = 1
+        // - Add GestureRecognizer to view
+        someView.addGestureRecognizer(gestureRecognizer)
+        someView.isUserInteractionEnabled = true
     }
 }

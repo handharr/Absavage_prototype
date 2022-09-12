@@ -39,6 +39,8 @@
 		A55D372428CE3F0C00DCAA5E /* LibraryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55D372228CE3F0C00DCAA5E /* LibraryTableViewCell.xib */; };
 		A55D372728CE3F3300DCAA5E /* RoundedLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D372628CE3F3300DCAA5E /* RoundedLabelView.swift */; };
 		A55D372928CE3F5500DCAA5E /* RoundedLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55D372828CE3F5500DCAA5E /* RoundedLabelView.xib */; };
+		A55D373228CF1FEF00DCAA5E /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D373028CF1FEF00DCAA5E /* MyProfileViewController.swift */; };
+		A55D373328CF1FEF00DCAA5E /* MyProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55D373128CF1FEF00DCAA5E /* MyProfileViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +79,8 @@
 		A55D372228CE3F0C00DCAA5E /* LibraryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryTableViewCell.xib; sourceTree = "<group>"; };
 		A55D372628CE3F3300DCAA5E /* RoundedLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedLabelView.swift; sourceTree = "<group>"; };
 		A55D372828CE3F5500DCAA5E /* RoundedLabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedLabelView.xib; sourceTree = "<group>"; };
+		A55D373028CF1FEF00DCAA5E /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		A55D373128CF1FEF00DCAA5E /* MyProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProfileViewController.xib; sourceTree = "<group>"; };
 		EE6159A211303CA82561AD50 /* Pods-Absavage_prototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Absavage_prototype.debug.xcconfig"; path = "Target Support Files/Pods-Absavage_prototype/Pods-Absavage_prototype.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +142,7 @@
 		A555ACAC28CA0F5600ACB2A1 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				A55D372F28CF1FD500DCAA5E /* MyProfile */,
 				A555ACAE28CA0F6300ACB2A1 /* Dashboard */,
 				A555ACB228CA0FAF00ACB2A1 /* Rangkings */,
 				A555ACB128CA0FAB00ACB2A1 /* Library */,
@@ -177,7 +182,6 @@
 		A555ACB128CA0FAB00ACB2A1 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				A55D372028CE3EEC00DCAA5E /* TableViewCells */,
 				A555ACBD28CA111100ACB2A1 /* LibraryViewController.swift */,
 				A555ACBE28CA111100ACB2A1 /* LibraryViewController.xib */,
 			);
@@ -277,6 +281,16 @@
 			path = RoundedLabel;
 			sourceTree = "<group>";
 		};
+		A55D372F28CF1FD500DCAA5E /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				A55D372028CE3EEC00DCAA5E /* TableViewCells */,
+				A55D373028CF1FEF00DCAA5E /* MyProfileViewController.swift */,
+				A55D373128CF1FEF00DCAA5E /* MyProfileViewController.xib */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
 		FB2D9EAA600202B9B9F5B0AD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +365,7 @@
 				A555ACC828CA112F00ACB2A1 /* MyProgramViewController.xib in Resources */,
 				A55D372428CE3F0C00DCAA5E /* LibraryTableViewCell.xib in Resources */,
 				A555ACA228CA0C7400ACB2A1 /* Assets.xcassets in Resources */,
+				A55D373328CF1FEF00DCAA5E /* MyProfileViewController.xib in Resources */,
 				A555ACD028CA2D3800ACB2A1 /* PrimaryHeaderView.xib in Resources */,
 				A555AE5328CAEDF500ACB2A1 /* SecondaryHeaderView.xib in Resources */,
 				A555AE4B28CA5DD600ACB2A1 /* MonumentExtended-Ultrabold.otf in Resources */,
@@ -428,6 +443,7 @@
 				A555AC9B28CA0C7300ACB2A1 /* SceneDelegate.swift in Sources */,
 				A555AE4728CA567300ACB2A1 /* Extension+UIFont.swift in Sources */,
 				A555ACCE28CA2D2600ACB2A1 /* PrimaryHeaderView.swift in Sources */,
+				A55D373228CF1FEF00DCAA5E /* MyProfileViewController.swift in Sources */,
 				A555AE5728CAFADB00ACB2A1 /* ExploreCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
