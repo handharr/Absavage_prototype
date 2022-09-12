@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MonumentExtended-Regular.otf">
+            <string>MonumentExtended-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoundedLabelView" customModule="Absavage_prototype" customModuleProvider="target">
+            <connections>
+                <outlet property="dayLabel" destination="e8G-4F-WXd" id="AsI-B6-Brl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="206" height="194"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8G-4F-WXd" userLabel="dayLabel">
+                    <rect key="frame" x="0.0" y="0.0" width="206" height="194"/>
+                    <fontDescription key="fontDescription" name="MonumentExtended-Regular" family="Monument Extended" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="e8G-4F-WXd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0Ug-uk-loa"/>
+                <constraint firstAttribute="bottom" secondItem="e8G-4F-WXd" secondAttribute="bottom" id="CCq-Hz-WOz"/>
+                <constraint firstItem="e8G-4F-WXd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ht9-4O-Bw3"/>
+                <constraint firstAttribute="trailing" secondItem="e8G-4F-WXd" secondAttribute="trailing" id="rUN-lX-hsV"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-13.043478260869566" y="-92.410714285714278"/>
+        </view>
+    </objects>
+</document>

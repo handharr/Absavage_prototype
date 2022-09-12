@@ -35,6 +35,10 @@
 		A555AE5328CAEDF500ACB2A1 /* SecondaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A555AE5228CAEDF500ACB2A1 /* SecondaryHeaderView.xib */; };
 		A555AE5728CAFADB00ACB2A1 /* ExploreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555AE5528CAFADB00ACB2A1 /* ExploreCollectionViewCell.swift */; };
 		A555AE5828CAFADB00ACB2A1 /* ExploreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A555AE5628CAFADB00ACB2A1 /* ExploreCollectionViewCell.xib */; };
+		A55D372328CE3F0C00DCAA5E /* LibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D372128CE3F0C00DCAA5E /* LibraryTableViewCell.swift */; };
+		A55D372428CE3F0C00DCAA5E /* LibraryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55D372228CE3F0C00DCAA5E /* LibraryTableViewCell.xib */; };
+		A55D372728CE3F3300DCAA5E /* RoundedLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D372628CE3F3300DCAA5E /* RoundedLabelView.swift */; };
+		A55D372928CE3F5500DCAA5E /* RoundedLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55D372828CE3F5500DCAA5E /* RoundedLabelView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +55,7 @@
 		A555ACBA28CA110300ACB2A1 /* RangkingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RangkingsViewController.xib; sourceTree = "<group>"; };
 		A555ACBD28CA111100ACB2A1 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		A555ACBE28CA111100ACB2A1 /* LibraryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryViewController.xib; sourceTree = "<group>"; };
-		A555ACC128CA112200ACB2A1 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		A555ACC128CA112200ACB2A1 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		A555ACC228CA112200ACB2A1 /* ExploreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreViewController.xib; sourceTree = "<group>"; };
 		A555ACC528CA112F00ACB2A1 /* MyProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProgramViewController.swift; sourceTree = "<group>"; };
 		A555ACC628CA112F00ACB2A1 /* MyProgramViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProgramViewController.xib; sourceTree = "<group>"; };
@@ -69,6 +73,10 @@
 		A555AE5228CAEDF500ACB2A1 /* SecondaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondaryHeaderView.xib; sourceTree = "<group>"; };
 		A555AE5528CAFADB00ACB2A1 /* ExploreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCollectionViewCell.swift; sourceTree = "<group>"; };
 		A555AE5628CAFADB00ACB2A1 /* ExploreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreCollectionViewCell.xib; sourceTree = "<group>"; };
+		A55D372128CE3F0C00DCAA5E /* LibraryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewCell.swift; sourceTree = "<group>"; };
+		A55D372228CE3F0C00DCAA5E /* LibraryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryTableViewCell.xib; sourceTree = "<group>"; };
+		A55D372628CE3F3300DCAA5E /* RoundedLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedLabelView.swift; sourceTree = "<group>"; };
+		A55D372828CE3F5500DCAA5E /* RoundedLabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedLabelView.xib; sourceTree = "<group>"; };
 		EE6159A211303CA82561AD50 /* Pods-Absavage_prototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Absavage_prototype.debug.xcconfig"; path = "Target Support Files/Pods-Absavage_prototype/Pods-Absavage_prototype.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +177,7 @@
 		A555ACB128CA0FAB00ACB2A1 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				A55D372028CE3EEC00DCAA5E /* TableViewCells */,
 				A555ACBD28CA111100ACB2A1 /* LibraryViewController.swift */,
 				A555ACBE28CA111100ACB2A1 /* LibraryViewController.xib */,
 			);
@@ -187,6 +196,7 @@
 		A555ACCB28CA2CA800ACB2A1 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				A55D372528CE3F1600DCAA5E /* RoundedLabel */,
 				A555AE4F28CAEDC800ACB2A1 /* SecondaryHeader */,
 				A555ACCC28CA2D1600ACB2A1 /* PrimaryHeader */,
 			);
@@ -247,6 +257,24 @@
 				A555AE5628CAFADB00ACB2A1 /* ExploreCollectionViewCell.xib */,
 			);
 			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		A55D372028CE3EEC00DCAA5E /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A55D372128CE3F0C00DCAA5E /* LibraryTableViewCell.swift */,
+				A55D372228CE3F0C00DCAA5E /* LibraryTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		A55D372528CE3F1600DCAA5E /* RoundedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				A55D372628CE3F3300DCAA5E /* RoundedLabelView.swift */,
+				A55D372828CE3F5500DCAA5E /* RoundedLabelView.xib */,
+			);
+			path = RoundedLabel;
 			sourceTree = "<group>";
 		};
 		FB2D9EAA600202B9B9F5B0AD /* Pods */ = {
@@ -319,7 +347,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A555ACA528CA0C7400ACB2A1 /* LaunchScreen.storyboard in Resources */,
+				A55D372928CE3F5500DCAA5E /* RoundedLabelView.xib in Resources */,
 				A555ACC828CA112F00ACB2A1 /* MyProgramViewController.xib in Resources */,
+				A55D372428CE3F0C00DCAA5E /* LibraryTableViewCell.xib in Resources */,
 				A555ACA228CA0C7400ACB2A1 /* Assets.xcassets in Resources */,
 				A555ACD028CA2D3800ACB2A1 /* PrimaryHeaderView.xib in Resources */,
 				A555AE5328CAEDF500ACB2A1 /* SecondaryHeaderView.xib in Resources */,
@@ -385,10 +415,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A555ACBB28CA110300ACB2A1 /* RangkingsViewController.swift in Sources */,
+				A55D372328CE3F0C00DCAA5E /* LibraryTableViewCell.swift in Sources */,
 				A555AC9D28CA0C7300ACB2A1 /* ViewController.swift in Sources */,
 				A555ACD328CA2E2100ACB2A1 /* Extension+UIView.swift in Sources */,
 				A555AC9928CA0C7300ACB2A1 /* AppDelegate.swift in Sources */,
 				A555ACCA28CA11F000ACB2A1 /* DashboardTabBarController.swift in Sources */,
+				A55D372728CE3F3300DCAA5E /* RoundedLabelView.swift in Sources */,
 				A555AE5128CAEDD700ACB2A1 /* SecondaryHeaderView.swift in Sources */,
 				A555ACBF28CA111100ACB2A1 /* LibraryViewController.swift in Sources */,
 				A555ACC728CA112F00ACB2A1 /* MyProgramViewController.swift in Sources */,

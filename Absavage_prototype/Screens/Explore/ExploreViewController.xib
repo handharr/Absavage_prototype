@@ -114,7 +114,7 @@
                         <constraint firstItem="P5H-LX-cyG" firstAttribute="top" secondItem="Eci-i2-Los" secondAttribute="top" id="4dR-M4-CD5"/>
                         <constraint firstItem="P5H-LX-cyG" firstAttribute="leading" secondItem="Eci-i2-Los" secondAttribute="leading" id="9KV-F0-n82"/>
                         <constraint firstAttribute="trailing" secondItem="P5H-LX-cyG" secondAttribute="trailing" id="EfR-Kp-GRd"/>
-                        <constraint firstAttribute="bottom" secondItem="P5H-LX-cyG" secondAttribute="bottom" id="VfW-DQ-idh"/>
+                        <constraint firstAttribute="bottom" secondItem="P5H-LX-cyG" secondAttribute="bottom" constant="20" symbolic="YES" id="VfW-DQ-idh"/>
                         <constraint firstItem="P5H-LX-cyG" firstAttribute="width" secondItem="Eci-i2-Los" secondAttribute="width" id="a5U-uI-pRN"/>
                     </constraints>
                 </scrollView>

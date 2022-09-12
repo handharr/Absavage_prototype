@@ -57,6 +57,23 @@ class ExploreViewController: UIViewController {
         secondCollectionView.delegate = self
         secondCollectionView.dataSource = self
     }
+    
+    // MARK: - HELPERS
+    private func setActive() {
+        for collView in [firstCollectionView, secondCollectionView] {
+            guard let collView = collView,
+                  let cells = collView.visibleCells as? [ExploreCollectionViewCell]
+            else { return }
+            for cell in cells {
+                let frame = collView.convert(cell.frame.origin, to: mainStackView)
+                if frame.x < 250.0 && frame.x > -75.0 {
+                    cell.setActive(true)
+                } else {
+                    cell.setActive(false)
+                }
+            }
+        }
+    }
 }
 
 // MARK: - COLLECTION VIEW DELEGATION
@@ -82,16 +99,11 @@ extension ExploreViewController: UICollectionViewDelegate, UICollectionViewDataS
         return CGSize(width: screendWidth * 0.9, height: 360)
     }
     
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        guard let cells = firstCollectionView.visibleCells as? [ExploreCollectionViewCell] else { return }
-        var strings: [String] = []
-        for cell in cells {
-            strings.append(cell.subtitleLabel.text?.lowercased() ?? "")
-        }
-        print("debug \(strings)")
-        strings.removeAll()
-        for cell in cells {
-            print("debug \(cell.subtitleLabel.text ?? "") - \(cell.frame.origin.x) - \(firstCollectionView.contentOffset.x)")
-        }
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        setActive()
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        setActive()
     }
 }

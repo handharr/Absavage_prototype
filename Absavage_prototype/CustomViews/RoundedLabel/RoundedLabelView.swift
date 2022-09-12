@@ -1,46 +1,46 @@
 //
-//  SecondaryHeader.swift
+//  RoundedLabelView.swift
 //  Absavage_prototype
 //
-//  Created by MEKARI on 09/09/22.
+//  Created by MEKARI on 12/09/22.
 //
 
 import UIKit
 
-final class SecondaryHeaderView: UIView {
-    // MARK: - PROPERTIES
-    // MARK: IBOUTLET
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var subtitleLabel: UILabel!
-    // MARK: INJECTED
-    var alignment: NSTextAlignment = .left {
-        didSet {
-            titleLabel.textAlignment = alignment
-            subtitleLabel.textAlignment = alignment
+final class RoundedLabelView: UIView {
+    enum color {
+        case dark
+        case light
+        case solid
+        
+        var colorValue: UIColor {
+            switch self {
+            case .dark:
+                return UIColor(red: 41/255, green: 38/255, blue: 36/255, alpha: 1)
+            case .light:
+                return .white
+            case .solid:
+                return UIColor(red: 152/255, green: 26/255, blue: 79/255, alpha: 1)
+            }
         }
     }
+    
+    @IBOutlet weak var dayLabel: UILabel!
     
     // MARK: - LIFECYCLE METHODS
     public override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
-        setupUI()
     }
     
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupView()
-        setupUI()
     }
     
     public override func awakeFromNib() {
-        // - Set bar label's color
-        if #available(iOS 13.0, *) {
-            UINavigationBar.appearance().tintColor = .label
-        } else {
-            // Fallback on earlier versions
-            UINavigationBar.appearance().tintColor = .black
-        }
+        self.layer.cornerRadius = 15
+        self.clipsToBounds = true
     }
     
     // MARK: - UI SETUP METHODS
@@ -58,7 +58,9 @@ final class SecondaryHeaderView: UIView {
         NSLayoutConstraint.activate(constraints)
     }
     
-    private func setupUI() {
-        self.backgroundColor = .clear
+    func setupUI(color: color, text: String, bgColor: color) {
+        dayLabel.text = text
+        self.backgroundColor = bgColor.colorValue
+        self.dayLabel.textColor = color.colorValue
     }
 }

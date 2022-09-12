@@ -40,6 +40,7 @@ class ExploreCollectionViewCell: UICollectionViewCell {
         titleLabel.text = title
         subtitleLabel.text = subtitle
         imageView.image = UIImage(named: subtitle.lowercased())
+        setActive(false)
     }
     
     func setupGradient() {
@@ -60,5 +61,10 @@ class ExploreCollectionViewCell: UICollectionViewCell {
     
     func removeGradient() {
         gradientLayer.isHidden = true
+    }
+    
+    func setActive(_ isActive: Bool) {
+        startButton.isHidden = !isActive
+        gradientLayer.isHidden = !isActive
     }
 }
