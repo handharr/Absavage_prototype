@@ -53,6 +53,7 @@ class MyProfileViewController: UIViewController {
     private func setupUI() {
         // - Hide navbar
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         // - Bg color
         self.view.backgroundColor = .black
         // - Secondary header
@@ -112,5 +113,11 @@ extension MyProfileViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         174.0
+    }
+}
+
+extension MyProfileViewController: UIGestureRecognizerDelegate {
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
     }
 }

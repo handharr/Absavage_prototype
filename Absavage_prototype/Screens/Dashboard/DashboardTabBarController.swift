@@ -18,10 +18,10 @@ class DashboardTabBarController: UITabBarController {
     // MARK: - Setup UI
     private func setupUI() {
         // - Instansiate VC
-        let myProgramVC = UINavigationController(rootViewController: MyProgramViewController())
-        let exploreVC = UINavigationController(rootViewController: ExploreViewController())
-        let libraryVC = UINavigationController(rootViewController: LibraryViewController())
-        let rangkingsVC = UINavigationController(rootViewController: RangkingsViewController())
+        let myProgramVC = MyProgramViewController()
+        let exploreVC = ExploreViewController()
+        let libraryVC = LibraryViewController()
+        let rangkingsVC = RangkingsViewController()
         // - Setup symbols
         myProgramVC.tabBarItem.image = UIImage(systemName: "house")
         exploreVC.tabBarItem.image = UIImage(systemName: "magnifyingglass")
